@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RPViewController : UIViewController
+@interface RPViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+
 
 @end
